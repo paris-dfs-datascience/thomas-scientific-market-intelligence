@@ -1,0 +1,8 @@
+# Run everything
+python run_all_universities.py
+
+# Single trigger across all universities
+python run_all_universities.py --trigger grant
+
+# Save full results to JSON
+python run_all_universities.py --output results.json

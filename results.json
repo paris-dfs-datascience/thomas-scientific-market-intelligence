@@ -1,0 +1,500 @@
+[
+  {
+    "university": "Yale University",
+    "triggers": {
+      "grant": [],
+      "faculty": [
+        {
+          "summary": "J. Adam Noah, PhD, has been appointed as a research faculty member of the Brain Function Laboratory at Yale School of Medicine. His expertise includes computational systems, brain imaging methods, and the application of traditional video games to clinical and basic neuroscience research.",
+          "name": "J. Adam Noah",
+          "department": "Brain Function Laboratory (Neuroscience)",
+          "start_date": "March 12, 2026",
+          "why_it_matters": "New faculty need to outfit new labs with supplies and equipment.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSRMRp-IMAd_S0TY6vSPuMQYZyN_FZtSz1VGegUeJczHuY8bwLijoxnKt0AidQHaLnc9gyN-Vk7Y0ST5sNlL-_rS_58Xrd3xiZKlaAMq1hKRLgSMRxztxbkeJVgrlHrKMtZu0PH0Q="
+        }
+      ],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:12:15.047353"
+  },
+  {
+    "university": "University of Pennsylvania",
+    "triggers": {
+      "grant": [],
+      "faculty": [
+        {
+          "summary": "Hannah Kakara Anderson, PhD, has been appointed as an Assistant Professor of Pediatrics at the Children's Hospital of Philadelphia.",
+          "name": "Hannah Kakara Anderson",
+          "department": "Pediatrics",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Ari Zachary Klein, PhD, has been appointed as a Research Assistant Professor of Biostatistics and Epidemiology.",
+          "name": "Ari Zachary Klein",
+          "department": "Biostatistics and Epidemiology",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Laura Rose Musheno-King, MD, has been appointed as an Associate Professor of Pediatrics (General Pediatrics).",
+          "name": "Laura Rose Musheno-King",
+          "department": "Pediatrics (General Pediatrics)",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Kelsey Jong, PhD, has been appointed as an Assistant Professor of Psychiatry.",
+          "name": "Kelsey Jong",
+          "department": "Psychiatry",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Anthony Spadaro, MD, has been appointed as an Assistant Professor of Emergency Medicine.",
+          "name": "Anthony Spadaro",
+          "department": "Emergency Medicine",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Catalina Angel, MD, has been appointed as an Assistant Professor of Anesthesiology and Critical Care.",
+          "name": "Catalina Angel",
+          "department": "Anesthesiology and Critical Care",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Daniel Balcarcel, MD, has been appointed as an Assistant Professor of Anesthesiology and Critical Care.",
+          "name": "Daniel Balcarcel",
+          "department": "Anesthesiology and Critical Care",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Sarah Coggins, MD, has been appointed as an Assistant Professor of Pediatrics.",
+          "name": "Sarah Coggins",
+          "department": "Pediatrics",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Anna Cruz, PsyD, has been appointed as an Assistant Professor of Psychiatry.",
+          "name": "Anna Cruz",
+          "department": "Psychiatry",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Tamir Diamond, MD, has been appointed as an Assistant Professor of Pediatrics (Gastroenterology, Hepatology and Nutrition).",
+          "name": "Tamir Diamond",
+          "department": "Pediatrics (Gastroenterology, Hepatology and Nutrition)",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Ross England, MD, PhD, has been appointed as an Assistant Professor of Pediatrics.",
+          "name": "Ross England",
+          "department": "Pediatrics",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Cornelius Gati, Dr.Rer.Nat, has been appointed as an Associate Professor of Systems Pharmacology and Translational Therapeutics.",
+          "name": "Cornelius Gati",
+          "department": "Systems Pharmacology and Translational Therapeutics",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Jennifer Heim, MD, has been appointed as an Assistant Professor of Neurology.",
+          "name": "Jennifer Heim",
+          "department": "Neurology",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Mali Hetmaniuk, MD, has been appointed as an Assistant Professor of Anesthesiology and Critical Care.",
+          "name": "Mali Hetmaniuk",
+          "department": "Anesthesiology and Critical Care",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Stephen Aradi, MD, has been appointed as an Assistant Professor of Neurology.",
+          "name": "Stephen Aradi",
+          "department": "Neurology",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Charly Ryan Good, PhD, has been appointed as a Research Assistant Professor of Cell and Developmental Biology.",
+          "name": "Charly Ryan Good",
+          "department": "Cell and Developmental Biology",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Jeong-Hwa Kim, MD, has been appointed as an Assistant Professor of Anesthesiology and Critical Care.",
+          "name": "Jeong-Hwa Kim",
+          "department": "Anesthesiology and Critical Care",
+          "start_date": "2026-04-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBLT4xZcZEFxs2eCzrkURphBxTFnyq8fiHL5qKLcXyvO8uG_g6fST2ZX7ZGqVrLy1qZ5b4hOKzZuLI4rqWjsUfjmmRUzNNvDYi_UM6QJ9D4wkspiiV87xdagX5m1DcunQhEli7WYjHDPDVvXo="
+        },
+        {
+          "summary": "Mattheau S. Comerford has been appointed as an Assistant Professor of Biology.",
+          "name": "Mattheau S. Comerford",
+          "department": "Biology",
+          "start_date": "2026-07-01",
+          "why_it_matters": "New faculty members often require new lab equipment and supplies to establish their research programs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNgsiWqsNyVx_8oAmfGy6WfwyUy-IAdIrSeZj9bd_m9UGhL8vycUUTCbtQDY8CA1_j__blnwi0VF2hvhuU5xlGPzj8b3XpwzWUk2HUgyM6xNUvpBWAFA0VFjD333JLCZUe45q5VwUac1Rqhw=="
+        }
+      ],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:12:58.707904"
+  },
+  {
+    "university": "UCLA",
+    "triggers": {
+      "grant": [],
+      "faculty": [
+        {
+          "summary": "UCLA announces new faculty member Kalli Kappel, who uncovers molecular rules that govern how cells organize themselves.",
+          "name": "Kalli Kappel",
+          "department": "Chemistry and Biochemistry",
+          "start_date": "2026-03-24",
+          "why_it_matters": "New faculty need to outfit new labs with supplies and equipment.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkf8yFW_O0H2G2z386R5sd_6I6DYK-a01DN9bfYkPNzfiRkYfvXwVsHL5A0bLYUoQ7A2VcykNbi_9RjRJVeDTTNAVhzWb2t4x8yKCHCk2a4WN7M72yJ67Of92OWPEdMvX3"
+        }
+      ],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:13:59.227194"
+  },
+  {
+    "university": "UC San Diego",
+    "triggers": {
+      "grant": [
+        {
+          "summary": "The National Institutes of Health (NIH) has awarded new funding to UC San Diego for a study on \"androgen effects on the reproductive neuroendocrine axis\" in mice, aimed at fine-tuning male hormone usage for women who identify as men.",
+          "professor": "UC San Diego researchers",
+          "department": "UC San Diego",
+          "amount": "$584,117",
+          "agency": "NIH",
+          "why_it_matters": "This grant indicates ongoing research in hormone therapy and reproductive biology, suggesting a need for specialized animal models, hormone assays, and potentially molecular biology reagents for labs supporting this work.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN68cIXjjHprNQ4hhwDJg8QIb5fJuoWLhjn9DsjHlqTb41igRC2InGXDEIXzxisqk5JOnyZzURWPfMSveV6QsleQnTuZyY8jidZCvWqyui0OabIxbfRKTE0cUtngZrgFCRejetzglVVE1o9-frdi-6oq2PK18CahLEhd0_SyQpAnjVDStu1XchPOTrb4b8GnVBDx2db0jufeP1dXS5d2uJvH07v46_eg7xwVIHAqNx02nu"
+        }
+      ],
+      "faculty": [],
+      "capital": [],
+      "contract": [
+        {
+          "summary": "A UC Systemwide agreement for pharmaceutical distribution is expiring.",
+          "contract_name": "AmeriSource Bergen Pharma Distributor",
+          "estimated_value": null,
+          "deadline_or_expiration": "April 30, 2026",
+          "why_it_matters": "This expiring systemwide contract presents a potential re-compete opportunity for Thomas Scientific if they offer pharmaceutical distribution or related lab supplies.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa1TLpr52Hs0M9NCZG-8EKDxfg8-EjsWUn_ZWISR4KQTUvgtNnnxHDwRnMOu8U2y-s8lyxbDWbRmNscCh0Z1ghN7gGfWBFiKi-at-x5b6jGW-mJnJ43qpHFbPzJwTRCBp70JqwewZQNknuy88T2jVmoAWoJBxPLwrmCVQCp7c_d1sRWVkygKJuJf0bfQ=="
+        },
+        {
+          "summary": "A UC Systemwide agreement for life sciences products with Cytiva is expiring.",
+          "contract_name": "Cytiva (Global Life Sciences)",
+          "estimated_value": null,
+          "deadline_or_expiration": "April 15, 2026",
+          "why_it_matters": "The expiration of this systemwide contract for life sciences products could open a re-compete opportunity for Thomas Scientific in a key research area.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa1TLpr52Hs0M9NCZG-8EKDxfg8-EjsWUn_ZWISR4KQTUvgtNnnxHDwRnMOu8U2y-s8lyxbDWbRmNscCh0Z1ghN7gGfWBFiKi-at-x5b6jGW-mJnJ43qpHFbPzJwTRCBp70JqwewZQNknuy88T2jVmoAWoJBxPLwrmCVQCp7c_d1sRWVkygKJuJf0bfQ=="
+        },
+        {
+          "summary": "A UC Systemwide agreement for general laboratory supplies, specifically mentioning Rainin, is expiring.",
+          "contract_name": "General Lab Supplies/Rainin Agreement",
+          "estimated_value": null,
+          "deadline_or_expiration": "April 30, 2026",
+          "why_it_matters": "This expiring systemwide contract for general lab supplies, including Rainin products, offers a direct re-compete opportunity for Thomas Scientific.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa1TLpr52Hs0M9NCZG-8EKDxfg8-EjsWUn_ZWISR4KQTUvgtNnnxHDwRnMOu8U2y-s8lyxbDWbRmNscCh0Z1ghN7gGfWBFiKi-at-x5b6jGW-mJnJ43qpHFbPzJwTRCBp70JqwewZQNknuy88T2jVmoAWoJBxPLwrmCVQCp7c_d1sRWVkygKJuJf0bfQ=="
+        },
+        {
+          "summary": "A UC Systemwide agreement for autoclave and sterilizer maintenance parts with Getinge recently expired.",
+          "contract_name": "Getinge Autoclave/Sterilizer Maintenance Parts 2019.000898",
+          "estimated_value": null,
+          "deadline_or_expiration": "March 31, 2026",
+          "why_it_matters": "The recent expiration of this systemwide contract for autoclave and sterilizer maintenance parts could lead to a re-compete opportunity for Thomas Scientific if they offer related equipment or services.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa1TLpr52Hs0M9NCZG-8EKDxfg8-EjsWUn_ZWISR4KQTUvgtNnnxHDwRnMOu8U2y-s8lyxbDWbRmNscCh0Z1ghN7gGfWBFiKi-at-x5b6jGW-mJnJ43qpHFbPzJwTRCBp70JqwewZQNknuy88T2jVmoAWoJBxPLwrmCVQCp7c_d1sRWVkygKJuJf0bfQ=="
+        }
+      ]
+    },
+    "timestamp": "2026-04-01T21:14:43.462943"
+  },
+  {
+    "university": "UC Berkeley",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:15:43.267181"
+  },
+  {
+    "university": "UC San Francisco",
+    "triggers": {
+      "grant": [
+        {
+          "summary": "The University of California, San Francisco (UCSF) received $824 million in NIH funding in 2025 to advance groundbreaking research in medicine and science, focusing on developing therapies for cancer, diabetes, and dementia, and pursuing new technologies with AI to combat infectious diseases like tuberculosis, HIV, and malaria.",
+          "professor": null,
+          "department": "Schools of Medicine, Pharmacy, Dentistry, and Nursing",
+          "amount": "$824 million",
+          "agency": "NIH",
+          "why_it_matters": "This substantial university-wide funding indicates a broad range of active research projects across multiple UCSF departments, creating numerous opportunities for scientific supply sales representatives to engage with various labs.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbbd0By017pfIF_Xf1OK3gJQe5aUzq9NNvn8Y6-OT18-RnEqyO3rdCSJjMxFY8wu1LnJ3irsf2nL_F9Q5aS-c7zx5YdZbGtUS_dwVEspPsFXkkXgiMLHiaB14gbMov5VNTs8xQ9XLwtFIsNe6dl9Ja5X-GWPJbE56olo1XoGWDPoM9V0KiFiivPSzkCwWEtJaNY06T16bup_qFuROEcD5CtLIs4igQ29j2le0FPb_48MVRoJ56Ro4Umw=="
+        },
+        {
+          "summary": "The UCSF School of Nursing secured $14.5 million in NIH funding in 2025, with researchers like Jerry John Ouner, Van Park, Michele Pelter, Glenda Baguso, and Elena Flowers pioneering scientific discoveries and identifying new treatments for health issues such as diabetes, dementia, and cardiovascular disease.",
+          "professor": "Jerry John Ouner, Van Park, Michele Pelter, Glenda Baguso, Elena Flowers",
+          "department": "School of Nursing",
+          "amount": "$14.5 million",
+          "agency": "NIH",
+          "why_it_matters": "This specific funding for the School of Nursing, mentioning individual researchers, highlights active projects in nursing research that will require specialized scientific supplies and equipment.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYAYMSJD-nkB3_G4OSLuuysvQBZKF6LLfy2IpfF_ik7LAd8scosR6uhmzOekeKEwamEalFqBObdlDcX5fyzDCtSz7K0rciOyOsFwHgCAaeUGKvaiXugd4zvDoF-Sd0jIFhRhDoW4-Lcud38Yd6kqGK155i4DwQ7ncWxaLCCmGW20iWpqdq31IVqujIKk3VE5GnXeMukA78gJ1ErURHpZpe6fJkweIpzo6W1StoofnG5lc3"
+        }
+      ],
+      "faculty": [],
+      "capital": [
+        {
+          "summary": "Construction activities for the UCSF Health Helen Diller Hospital project are progressing, with structural steel deliveries scheduled to begin in late March and early April 2026, and ongoing foundation work.",
+          "project_name": "UCSF Health Helen Diller Hospital (Parnassus Heights Expansion)",
+          "value": "$4.3 billion (as part of the larger Parnassus Heights Expansion)",
+          "timeline": "Structural steel installation to begin April 2026; deliveries in late March and early April 2026; foundation work ongoing.",
+          "why_it_matters": "The development of this major hospital facility will create significant demand for a wide array of new laboratory equipment, consumables, and services for its advanced diagnostic and research capabilities.",
+          "source_url": "https://realestate.ucsf.edu/news/parnassus-heights-monthly-construction-update-march-2026"
+        },
+        {
+          "summary": "Demolition for the Parnassus Central Campus Site Improvements is extended through March 2026, with utility infrastructure work advancing towards the Bakar Research and Academic Building (BRAB). A partial renovation of the Clinical Sciences Building (CSB) on level 7, supporting the connection to BRAB, is expected to be completed in December 2026.",
+          "project_name": "UCSF Barbara and Gerson Bakar Research and Academic Building (Parnassus Heights Expansion)",
+          "value": "$4.3 billion (as part of the larger Parnassus Heights Expansion)",
+          "timeline": "Demolition extended through March 2026; utility infrastructure work advancing; partial renovation of CSB (connecting to BRAB) to be completed by December 2026.",
+          "why_it_matters": "The establishment of new research and academic spaces will necessitate extensive procurement of specialized scientific instruments, reagents, and general lab supplies to support cutting-edge collaborative science and education.",
+          "source_url": "https://realestate.ucsf.edu/news/parnassus-heights-monthly-construction-update-march-2026"
+        }
+      ],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:16:23.681679"
+  },
+  {
+    "university": "UC Davis",
+    "triggers": {
+      "grant": [
+        {
+          "summary": "UC Davis Health has been awarded a $15.85 million grant from the National Institutes of Health (NIH) to continue a comprehensive, long-term study on brain aging in Hispanic-Latino communities, focusing on factors influencing healthy cognitive aging and the development of dementia.",
+          "professor": "Charles DeCarli",
+          "department": "Neurology, UC Davis Alzheimer's Disease Research Center",
+          "amount": "$15.85 million",
+          "agency": "NIH",
+          "why_it_matters": "This significant NIH grant indicates a sustained, high-level research effort in neurological health, suggesting ongoing needs for advanced imaging consumables, biomarker assay kits, and specialized lab equipment for long-term studies.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9YgVniBzZlvhC9FML40ZFVO1-geLWzM2YmQS-axU-rGbgjxKbSpc_v_dkf-UOQE824K8eXE0QHDBpk6sOIhfKM03ec0_rMB_uxJBF7WMfDVuw4DVDS0IW18-UWOnZW95XecK77dTp0jkASHt54XCo4ahSMLB4ObQZfapB-sAzN_EiuYmGTB16p0TueEcKxu3UWweoiqch26qoT7yBC8ZPREulDh4OPCY3ZwnpuKchwcqUPN2fH8Dg6D0gfXoU0pbVMAzoEN1hHrv1hA=="
+        },
+        {
+          "summary": "The 2025\u20132026 UCD\u00b2 Joint Research Fund, a collaboration between University College Dublin and UC Davis, has provided \u20ac120,000 to back six new projects focusing on One Health, Sustainable Food Systems, and Artificial Intelligence and Data Science.",
+          "professor": "Dr. Pranav Pandit, Dr. Daniela Barile",
+          "department": "AI in Veterinary Medicine for One Health (Pandit), Brassica Bites (Barile)",
+          "amount": "\u20ac120,000 (total for six projects)",
+          "agency": "UCD\u00b2 Joint Research Fund",
+          "why_it_matters": "This funding across One Health, AI, and sustainable food systems suggests diverse needs for scientific supplies, including those for veterinary research, analytical chemistry in food science, and potentially computational hardware for AI applications.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNzI9EVzmF8dFIZTK1EI5cFq-RoXCtfH6DbcoXwqeyTtME1OPv3wDsLdMsWG3j62_vreF4XjG2X6nR7mZ-Tnri484KDZO0NmfqsrGrVNX6sNwPHuwJJv_z5oxRL9N3sBKtlLuMMMUrjgsXTcG12vxdBfHJDf00h1mblgzAPWkAmwCkl8Z2d_0FP3auejk5ZhD4gfUdVDHF-cq3v_ihu-A="
+        },
+        {
+          "summary": "Engineers at UC Davis are part of three out of six teams that received inaugural AI and Health Seed Funding Awards, each worth $50,000, from the Center for Information Technology Research in the Interest of Society and the Banatao Institute (CITRIS) to advance interdisciplinary AI-enabled healthcare technology research.",
+          "professor": "Not specified (Engineers at UC Davis)",
+          "department": "College of Engineering",
+          "amount": "$50,000 (per award, six awards total)",
+          "agency": "CITRIS",
+          "why_it_matters": "This seed funding for AI and health research in engineering indicates a demand for specialized components, sensors, and software tools crucial for developing and prototyping new healthcare technologies.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPOn3rIg7tglybsTak3SKpkZnQvjIBTR0UlvnoyAZdOKaoFEY3AC1PQpJ_v75qRxTeIiUXBU57E48DVAqL7sbOyzyou7tPU8yg4OagwHCP1GE09zBegRY2gsmKIKYXsxwbQEs8g1f0bxJM40n_2_qAJgmCX28YrErcTV1znnJzzcxUBCZv1CeuwOlMPtWEI8JcahqDQLvy-iIX4BbDRRzTwzDu2vmApupfJHAsYpmA=="
+        }
+      ],
+      "faculty": [],
+      "capital": [],
+      "contract": [
+        {
+          "summary": "The University of California, Davis, has issued a Request for Proposal (RFP) for the California National Primate Research Center (CNPRC) to procure cages and racks specifically designed for non-human primates. The contract aims to equip the CNPRC to support its research and animal care activities, requiring bidders to meet specific design and material specifications for various cage types.",
+          "contract_name": "RFP CNPRC CAGES AND RACKS 003944",
+          "estimated_value": "Not specified in snippet",
+          "deadline_or_expiration": "Not specified in snippet",
+          "why_it_matters": "This presents a direct bid opportunity for Thomas Scientific to supply specialized animal housing equipment to a prominent UC Davis research institution, potentially expanding its market share in primate research facilities.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-kyifnlSitIR_TKylyO3fnYTsAwaVQXNHUuJ1mITBvWTcVPS10pnoTJhuiZA4llFq7l7f1lFdod-B5w88ZcfsBtX9sJuH0LwIL-QPsmX_9kf3fDRYzlEuAKqgf7xQoq0AFrXea5c4K0m7o895SL4pVAKXwlCcqY1_IghOxsKTWqBsCaFJISn96nEdi_GZiYDVAl0zMlTMIAX_gytNqA_NlQ=="
+        }
+      ]
+    },
+    "timestamp": "2026-04-01T21:17:26.996552"
+  },
+  {
+    "university": "UC Santa Barbara",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:18:11.132756"
+  },
+  {
+    "university": "UC Irvine",
+    "triggers": {
+      "grant": [
+        {
+          "summary": "Professor Karen Lincoln received a National Institute of Neurological Disorders and Stroke grant to develop culturally tailored approaches for successfully engaging the Black community in brain health research in Southern California.",
+          "professor": "Karen Lincoln",
+          "department": "Joe C. Wen School of Population & Public Health",
+          "amount": "Nearly $250,000",
+          "agency": "National Institute of Neurological Disorders and Stroke (NIH)",
+          "why_it_matters": "This grant indicates a need for scientific supplies related to neurological disorders research, community engagement, and potentially brain health studies, offering an opportunity for tailored sales approaches.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhAZnKcurbh6Ob1oz6w1R5xGyw5ApQkrjDQsK1vFFjeInxvCyijH8hgxCoE0TeqAYGNGDNyhxSGfHwr2MlSGH24hN1vpBjbny1QPVODFRmO3ZIIgDd1OBuTuT2RG1FrQ55tcqv9RsGAOJb3kNf4ZzGZmfVthc0odJY62ZqZ6OMuznOiU-7_pQXYz5l3EXl7gyyBuay-rLQYaBo-E8tGwd5QeB9DHeBSX_58Mpz8OpweVI74pL7Wcc="
+        },
+        {
+          "summary": "Nicole Sparks received a prestigious $1.9 million Outstanding Investigator Award from the National Institute of General Medical Sciences to investigate epigenetics, the chemical instructions that act like on/off switches for our genes.",
+          "professor": "Nicole Sparks",
+          "department": "Joe C. Wen School of Population & Public Health",
+          "amount": "$1.9 million",
+          "agency": "National Institute of General Medical Sciences (NIH)",
+          "why_it_matters": "This significant award suggests a demand for advanced epigenetics research tools, reagents, and lab equipment, presenting a substantial sales opportunity for specialized scientific supplies.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhAZnKcurbh6Ob1oz6w1R5xGyw5ApQkrjDQsK1vFFjeInxvCyijH8hgxCoE0TeqAYGNGDNyhxSGfHwr2MlSGH24hN1vpBjbny1QPVODFRmO3ZIIgDd1OBuTuT2RG1FrQ55tcqv9RsGAOJb3kNf4ZzGZmfVthc0odJY62ZqZ6OMuznOiU-7_pQXYz5l3EXl7gyyBuay-rLQYaBo-E8tGwd5QeB9DHeBSX_58Mpz8OpweVI74pL7Wcc="
+        },
+        {
+          "summary": "Jun Wu received a National Institute of Environmental Health Sciences grant for nearly $1 million to investigate how environmental exposure may contribute to parental postpartum depression and mental, emotional, and behavioral disorders in children.",
+          "professor": "Jun Wu",
+          "department": "Joe C. Wen School of Population & Public Health",
+          "amount": "Nearly $1 million",
+          "agency": "National Institute of Environmental Health Sciences (NIH)",
+          "why_it_matters": "This grant highlights a need for supplies related to environmental health research, mental health studies, and potentially maternal and child health, indicating a market for relevant scientific products.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhAZnKcurbh6Ob1oz6w1R5xGyw5ApQkrjDQsK1vFFjeInxvCyijH8hgxCoE0TeqAYGNGDNyhxSGfHwr2MlSGH24hN1vpBjbny1QPVODFRmO3ZIIgDd1OBuTuT2RG1FrQ55tcqv9RsGAOJb3kNf4ZzGZmfVthc0odJY62ZqZ6OMuznOiU-7_pQXYz5l3EXl7gyyBuay-rLQYaBo-E8tGwd5QeB9DHeBSX_58Mpz8OpweVI74pL7Wcc="
+        }
+      ],
+      "faculty": [
+        {
+          "summary": "Seth Cohen, an internationally recognized inorganic chemist, scholar, and educator, has been appointed dean of the School of Physical Sciences at the University of California, Irvine. His research encompasses chemistry, materials science, and medicinal chemistry, with applications ranging from energy sciences to pharmaceutical development.",
+          "name": "Seth Cohen",
+          "department": "School of Physical Sciences (Chemistry, Materials Science, Medicinal Chemistry)",
+          "start_date": "August 1, 2026",
+          "why_it_matters": "New faculty need to outfit new labs with supplies and equipment.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0yDVoCbatyA0vcInvpnoSFlPSD8mckGT24LHv2j-pafq7NAreFS_H9HNsz5py7aQ58MQYbduYMBq-z3iGraAxUkBMUS_nFxc-cVtlbnElytdGR0NzZPg0CPIUcpdYrKhS24M9M6DBMtb_CUQaDirUD0cDy8h1kHyby1_08OnKL5DEMWEovP3TMUgu0b2jZZ6GXi-dbQU4yTAlPsqn3-tPeAd9"
+        },
+        {
+          "summary": "Peter Chang, MD, an associate professor of radiological sciences, has taken on the new role of director for the UC Irvine Institute for Precision Health.",
+          "name": "Peter Chang",
+          "department": "Institute for Precision Health (and Radiological Sciences)",
+          "start_date": "March 25, 2026",
+          "why_it_matters": "New faculty need to outfit new labs with supplies and equipment.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4t4LW4aLU15XWGYyW_69G25UmL4X9dESGVbBy039gmf-IRinMfUanJGMCOby1F0TZ8e-0W02kETgUHuZZhrYw0HzHXnGCLKMdrwSQfbfyd2qPqIWe3jODC1BeMGQmMaao8b_V55mUXMnE9iYMOLHzejm1UNan1CeTkWDPjWiBYzvBC8ErHlSLZw=="
+        }
+      ],
+      "capital": [],
+      "contract": [
+        {
+          "summary": "UC Irvine is launching UCIBuy+, a new e-procurement system, which will impact how laboratory supplies, scientific equipment, and research consumables are purchased.",
+          "contract_name": "UCIBuy+ E-Procurement System Launch",
+          "estimated_value": "N/A",
+          "deadline_or_expiration": "April 13, 2026 (Launch Date)",
+          "why_it_matters": "Thomas Scientific needs to understand the new UCIBuy+ system to ensure seamless integration and continued participation in UC Irvine's procurement of scientific supplies.",
+          "source_url": "https://www.procure.uci.edu/"
+        },
+        {
+          "summary": "UC Irvine, as part of the University of California system, requested firms to re-register by March 31, 2026, to remain on the consultant roster for architectural, engineering, and other facility-related services for contracts under $100,000.",
+          "contract_name": "Annual Announcement for Architectural, Engineering, and Facility-Related Services Consultants",
+          "estimated_value": "Less than $100,000 per contract",
+          "deadline_or_expiration": "March 31, 2026 (to remain on roster)",
+          "why_it_matters": "While not direct lab supplies, these facility contracts could lead to new lab construction or renovation projects, creating future opportunities for Thomas Scientific to supply equipment and consumables.",
+          "source_url": "https://www.capitalprograms.ucla.edu/Contracts/Annual-Announcement"
+        }
+      ]
+    },
+    "timestamp": "2026-04-01T21:18:55.523088"
+  },
+  {
+    "university": "UC Santa Cruz",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:19:45.137862"
+  },
+  {
+    "university": "UC Riverside",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:20:22.425766"
+  },
+  {
+    "university": "UC Merced",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:21:03.372106"
+  },
+  {
+    "university": "Cleveland Clinic",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [
+        {
+          "summary": "Cleveland Clinic announced the ongoing progress of its $1.1 billion Neurological Institute, a 1 million sq-ft facility that will consolidate inpatient and outpatient neurological care and include research laboratories, with first patients expected in January 2027.",
+          "project_name": "Cleveland Clinic Neurological Institute",
+          "value": "$1.1 billion",
+          "timeline": "Construction ongoing, first patients expected January 2027",
+          "why_it_matters": "The establishment of new research laboratories within this institute presents significant opportunities for suppliers of specialized neuroscience research tools, diagnostic equipment, and laboratory consumables.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDQr__bxbF_PHMtC46FCzjKo1lUbUUBIMvUr-vdE4II1wAFLxnZDnqTys2CpNa8czeNTBHUs7GD-uHu2VwDoBIAeiREMYfRNl6MtM7gmplIlHAEgRhimgccNy4aXzdIVc0v5YMQo27q5wyrLT30yXMFxZ4Cweu6YPBAiUCppUH0FKBSqFu5wD6mo4fEz-4DtCvui9DumdgJSrCeXtP6zTd3W5XYAj4OKM_sMntDyQF-MxfjSvN80bG1JVDC8U82X64paFYodg="
+        },
+        {
+          "summary": "Cleveland Clinic reported the near-term completion of two new research buildings in the Cleveland Innovation District, part of the Global Center for Pathogen & Human Health Research, valued at $385.5 million, with anticipated completion in March 2026.",
+          "project_name": "Cleveland Innovation District Research Buildings (Global Center for Pathogen & Human Health Research)",
+          "value": "$385.5 million",
+          "timeline": "Near-term completion, anticipated March 2026",
+          "why_it_matters": "The opening of these advanced pathogen and human health research facilities creates substantial demand for cutting-edge laboratory equipment, reagents, and safety supplies for infectious disease research.",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDQr__bxbF_PHMtC46FCzjKo1lUbUUBIMvUr-vdE4II1wAFLxnZDnqTys2CpNa8czeNTBHUs7GD-uHu2VwDoBIAeiREMYfRNl6MtM7gmplIlHAEgRhimgccNy4aXzdIVc0v5YYMQo27q5wyrLT30yXMFxZ4Cweu6YPBAiUCppUH0FKBSqFu5wD6mo4fEz-4DtCvui9DumdgJSrCeXtP6zTd3W5XYAj4OKM_sMntDyQF-MxfjSvN80bG1JVDC8U82X64paFYodg="
+        }
+      ],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:21:49.450294"
+  },
+  {
+    "university": "Boston Children's Hospital",
+    "triggers": {
+      "grant": [],
+      "faculty": [],
+      "capital": [],
+      "contract": []
+    },
+    "timestamp": "2026-04-01T21:22:37.171801"
+  }
+]
