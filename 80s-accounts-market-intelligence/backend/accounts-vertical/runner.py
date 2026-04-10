@@ -4,7 +4,9 @@ Imported by run_biopharma.py, run_education.py, etc.
 Do not run directly.
 """
 
+import asyncio
 import json
+import logging
 import os
 import re
 import sys
@@ -50,14 +52,49 @@ C = {
 }
 
 
+# ── Logger setup ──────────────────────────────────────────────────
+
+def setup_logger(log_file: str = None) -> logging.Logger:
+    """Configure logger with color console + optional plain file handler."""
+    logger = logging.getLogger("thomas_intel")
+    logger.setLevel(logging.DEBUG)
+    logger.handlers.clear()
+
+    # Console handler — keeps ANSI colors intact
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setLevel(logging.INFO)
+    ch.setFormatter(logging.Formatter("%(message)s"))
+    logger.addHandler(ch)
+
+    # File handler — plain text, no ANSI codes, with timestamps
+    if log_file:
+        # Strip ANSI codes for file output
+        class PlainFormatter(logging.Formatter):
+            _ansi = re.compile(r"\033\[[0-9;]*m")
+            def format(self, record):
+                record.msg = self._ansi.sub("", str(record.msg))
+                return super().format(record)
+
+        fh = logging.FileHandler(log_file, encoding="utf-8")
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(PlainFormatter("%(asctime)s [%(levelname)s] %(message)s", datefmt="%H:%M:%S"))
+        logger.addHandler(fh)
+
+    return logger
+
+
+# Module-level logger (replaced per run_category call)
+logger = logging.getLogger("thomas_intel")
+
+
 # ── Helpers ───────────────────────────────────────────────────────
 
 def get_client(api_key: str = None):
     key = api_key or os.environ.get("GEMINI_API_KEY")
     if not key:
-        print("ERROR: Add GEMINI_API_KEY=your_key to your .env file.")
+        logger.error("ERROR: Add GEMINI_API_KEY=your_key to your .env file.")
         sys.exit(1)
-    return genai.Client(api_key=key, http_options=HttpOptions(api_version="v1alpha"))
+    return genai.Client(api_key=key, http_options=HttpOptions(api_version="v1alpha", timeout=60000))
 
 
 def parse_signals(raw: str) -> list:
@@ -97,27 +134,29 @@ def print_signals(signal: str, signals: list):
     col = C.get(signal, "\033[96m")
     r, d, y, b = C["reset"], C["dim"], C["yellow"], C["bold"]
     if not signals:
-        print(f"  {d}[{signal}] No signals found.{r}")
+        logger.info(f"  {d}[{signal}] No signals found.{r}")
         return
-    print(f"  {col}{b}[{signal.upper()}] {len(signals)} signal(s){r}")
+    logger.info(f"  {col}{b}[{signal.upper()}] {len(signals)} signal(s){r}")
     for i, s in enumerate(signals, 1):
-        print(f"    {b}[{i}] {s.get('summary', '')}{r}")
+        logger.info(f"    {b}[{i}] {s.get('summary', '')}{r}")
         meta = " · ".join(str(s[f]) for f in FIELD_MAPS.get(signal, []) if s.get(f))
         if meta:
-            print(f"        {d}{meta}{r}")
+            logger.info(f"        {d}{meta}{r}")
         if s.get("why_it_matters"):
-            print(f"        {y}↳ {s['why_it_matters']}{r}")
+            logger.info(f"        {y}↳ {s['why_it_matters']}{r}")
         if s.get("source_url"):
-            print(f"        {d}{s['source_url']}{r}")
+            logger.info(f"        {d}{s['source_url']}{r}")
 
+
+# ── Sync run_account (kept for backward compatibility) ────────────
 
 def run_account(client, account: str, category: str, signals: list,
                 output_file: str = None, all_results: list = None,
                 retry: int = 3, retry_delay: int = 10) -> dict:
     b, h, r, d = C["bold"], C["header"], C["reset"], C["dim"]
-    print(f"\n{b}{'═'*60}{r}")
-    print(f"{h}{b}  {account}{r}  {d}[{category}]{r}")
-    print(f"{b}{'═'*60}{r}")
+    logger.info(f"\n{b}{'═'*60}{r}")
+    logger.info(f"{h}{b}  {account}{r}  {d}[{category}]{r}")
+    logger.info(f"{b}{'═'*60}{r}")
 
     result = {
         "account":   account,
@@ -127,7 +166,7 @@ def run_account(client, account: str, category: str, signals: list,
     }
 
     for signal in signals:
-        print(f"  {d}Searching [{signal}]...{r}", end="", flush=True)
+        logger.info(f"  {d}Searching [{signal}]...{r}")
         found = []
         for attempt in range(1, retry + 1):
             try:
@@ -145,7 +184,7 @@ def run_account(client, account: str, category: str, signals: list,
                     finish_reason = candidates[0].finish_reason if candidates else "unknown"
                     parts = candidates[0].content.parts if candidates and candidates[0].content else []
                     part_types = [type(p).__name__ for p in parts] if parts else []
-                    print(f"\r  {C['yellow']}⚠ [{signal}] Empty response (finish_reason={finish_reason}, parts={part_types}). Skipping.{C['reset']}")
+                    logger.warning(f"  {C['yellow']}⚠ [{signal}] Empty response (finish_reason={finish_reason}, parts={part_types}). Skipping.{C['reset']}")
                     break
                 found = parse_signals(response.text)
                 time.sleep(CALL_DELAY)
@@ -153,40 +192,110 @@ def run_account(client, account: str, category: str, signals: list,
             except Exception as e:
                 err = str(e)
                 if "RESOURCE_EXHAUSTED" in err and "prepayment" in err:
-                    print(f"\r  {C['red']}✘ Credits depleted. Top up at aistudio.google.com and re-run.{C['reset']}")
+                    logger.critical(f"  {C['red']}✘ Credits depleted. Top up at aistudio.google.com and re-run.{C['reset']}")
                     result["signals"][signal] = []
                     if output_file and all_results is not None:
                         all_results.append(result)
                         save_incremental(all_results, output_file)
-                        print(f"{d}  Progress saved to {output_file}{r}")
+                        logger.info(f"{d}  Progress saved to {output_file}{r}")
                     sys.exit(1)
                 elif "429" in err or "RATE" in err.upper():
-                    wait = min(retry_delay * attempt, 120)  # cap at 2 minutes
-                    print(f"\r  {C['yellow']}⚠ Rate limit [{signal}], waiting {wait}s (attempt {attempt}/{retry})...{C['reset']}", end="", flush=True)
+                    wait = min(retry_delay * attempt, 120)
+                    logger.warning(f"  {C['yellow']}⚠ Rate limit [{signal}], waiting {wait}s (attempt {attempt}/{retry})...{C['reset']}")
                     time.sleep(wait)
                 else:
-                    print(f"\r  {C['red']}ERROR [{signal}]: {e}{C['reset']}")
+                    logger.error(f"  {C['red']}ERROR [{signal}]: {e}{C['reset']}")
                     break
 
-        print(f"\r", end="")
         print_signals(signal, found)
         result["signals"][signal] = found
 
     if output_file and all_results is not None:
         all_results.append(result)
-        # Save every 5 accounts to reduce disk I/O — always save on first and last
         if len(all_results) % 5 == 0 or len(all_results) == 1:
             save_incremental(all_results, output_file)
-            print(f"  {d}✔ saved → {output_file} ({len(all_results)} accounts){r}")
+            logger.info(f"  {d}✔ saved → {output_file} ({len(all_results)} accounts){r}")
 
     return result
 
 
+# ── Async run_account (parallel signals) ─────────────────────────
+
+async def run_account_async(client, account: str, category: str, signals: list,
+                             output_file: str = None, all_results: list = None,
+                             sem: asyncio.Semaphore = None) -> dict:
+    b, h, r, d = C["bold"], C["header"], C["reset"], C["dim"]
+    logger.info(f"\n{b}{'═'*60}{r}")
+    logger.info(f"{h}{b}  {account}{r}  {d}[{category}]{r}")
+    logger.info(f"{b}{'═'*60}{r}")
+
+    result = {
+        "account":   account,
+        "category":  category,
+        "signals":   {},
+        "timestamp": datetime.now().isoformat(),
+    }
+
+    async def fetch_one(signal: str):
+        """Fetch one signal concurrently — retries on 429, skips on other errors."""
+        async with sem:
+            prompt = build_prompt(signal, account, category)
+            for attempt in range(1, 4):  # 3 attempts
+                try:
+                    response = await client.aio.models.generate_content(
+                        model=MODEL,
+                        contents=prompt,
+                        config=GenerateContentConfig(
+                            tools=[Tool(google_search=GoogleSearch())],
+                            temperature=TEMPERATURE,
+                        ),
+                    )
+                    if response.text is None:
+                        candidates = getattr(response, "candidates", [])
+                        finish_reason = candidates[0].finish_reason if candidates else "unknown"
+                        logger.warning(f"  {C['yellow']}⚠ [{signal}] Empty response (finish_reason={finish_reason}). Skipping.{C['reset']}")
+                        return signal, []
+                    return signal, parse_signals(response.text)
+                except Exception as e:
+                    err = str(e)
+                    if "RESOURCE_EXHAUSTED" in err and "prepayment" in err:
+                        logger.critical(f"  {C['red']}✘ Credits depleted. Top up at aistudio.google.com and re-run.{C['reset']}")
+                        sys.exit(1)
+                    elif "429" in err or "RATE" in err.upper():
+                        wait = min(10 * attempt, 60)
+                        logger.warning(f"  {C['yellow']}⚠ Rate limit [{signal}], waiting {wait}s (attempt {attempt}/3)...{C['reset']}")
+                        await asyncio.sleep(wait)
+                    else:
+                        logger.error(f"  {C['red']}ERROR [{signal}]: {e}{C['reset']}")
+                        return signal, []
+            return signal, []
+
+    # Fire all signals concurrently — wait for all to finish
+    logger.info(f"  {d}Searching {len(signals)} signals in parallel...{r}")
+    pairs = await asyncio.gather(*[fetch_one(s) for s in signals])
+    signal_map = dict(pairs)
+
+    # Print in original signal order — deterministic, readable output
+    for signal in signals:
+        print_signals(signal, signal_map[signal])
+        result["signals"][signal] = signal_map[signal]
+
+    if output_file and all_results is not None:
+        all_results.append(result)
+        if len(all_results) % 5 == 0 or len(all_results) == 1:
+            save_incremental(all_results, output_file)
+            logger.info(f"  {d}✔ saved → {output_file} ({len(all_results)} accounts){r}")
+
+    return result
+
+
+# ── Summary printer ───────────────────────────────────────────────
+
 def print_summary(all_results: list):
     b, r, d, y = C["bold"], C["reset"], C["dim"], C["yellow"]
-    print(f"\n{b}{'═'*60}{r}")
-    print(f"{b}  SUMMARY{r}")
-    print(f"{b}{'═'*60}{r}")
+    logger.info(f"\n{b}{'═'*60}{r}")
+    logger.info(f"{b}  SUMMARY{r}")
+    logger.info(f"{b}{'═'*60}{r}")
     total_signals = 0
     for res in all_results:
         counts = {s: len(v) for s, v in res["signals"].items()}
@@ -194,11 +303,13 @@ def print_summary(all_results: list):
         total_signals += total
         if total > 0:
             count_str = "  ".join(f"{s}:{n}" for s, n in counts.items() if n > 0)
-            print(f"  {b}{res['account']}{r}  {d}[{res['category']}]{r}  {y}{count_str}{r}")
+            logger.info(f"  {b}{res['account']}{r}  {d}[{res['category']}]{r}  {y}{count_str}{r}")
         else:
-            print(f"  {d}{res['account']} [{res['category']}] — no signals{r}")
-    print(f"\n  {b}Total signals: {total_signals}{r} across {len(all_results)} accounts\n")
+            logger.info(f"  {d}{res['account']} [{res['category']}] — no signals{r}")
+    logger.info(f"\n  {b}Total signals: {total_signals}{r} across {len(all_results)} accounts\n")
 
+
+# ── Main entry point ──────────────────────────────────────────────
 
 def run_category(category: str, output_file: str, signal_override: str = None,
                  company_filter: str = None, api_key: str = None, limit: int = None):
@@ -209,21 +320,26 @@ def run_category(category: str, output_file: str, signal_override: str = None,
     except ImportError:
         pass
 
+    # Set up logger — writes to console + log file alongside the JSON output
+    global logger
+    log_file = output_file.replace(".json", ".log") if output_file else None
+    logger = setup_logger(log_file)
+
     client = get_client(api_key)
     signals = [signal_override] if signal_override else CATEGORY_TRIGGERS.get(category, [])
 
     if not signals:
-        print(f"{C['red']}ERROR: No signals defined for category '{category}'. Check CATEGORY_TRIGGERS in prompts.py.{C['reset']}")
+        logger.error(f"{C['red']}ERROR: No signals defined for category '{category}'. Check CATEGORY_TRIGGERS in prompts.py.{C['reset']}")
         sys.exit(1)
 
     # Validate all signal names are known before starting any API calls
     unknown = [s for s in signals if s not in FIELD_MAPS]
     if unknown:
-        print(f"{C['red']}ERROR: Unknown signal(s): {unknown}. Check FIELD_MAPS in prompts.py.{C['reset']}")
+        logger.error(f"{C['red']}ERROR: Unknown signal(s): {unknown}. Check FIELD_MAPS in prompts.py.{C['reset']}")
         sys.exit(1)
 
     if category not in ACCOUNTS:
-        print(f"{C['red']}ERROR: Category '{category}' not found in accounts.py.{C['reset']}")
+        logger.error(f"{C['red']}ERROR: Category '{category}' not found in accounts.py.{C['reset']}")
         sys.exit(1)
 
     accounts = ACCOUNTS[category]
@@ -233,30 +349,40 @@ def run_category(category: str, output_file: str, signal_override: str = None,
         query = company_filter.upper()
         accounts = [a for a in accounts if query in a.upper()]
         if not accounts:
-            print(f"ERROR: No accounts matched '{company_filter}' in {category}.")
+            logger.error(f"ERROR: No accounts matched '{company_filter}' in {category}.")
             sys.exit(1)
 
     # Resume from checkpoint
     all_results = load_checkpoint(output_file) if output_file else []
     completed = {r["account"].upper() for r in all_results}
     if completed:
-        print(f"{C['yellow']}⚡ Resuming — {len(completed)} accounts already done, skipping.{C['reset']}")
+        logger.info(f"{C['yellow']}⚡ Resuming — {len(completed)} accounts already done, skipping.{C['reset']}")
     pending = [a for a in accounts if a.upper() not in completed]
 
     # Apply limit after checkpoint resume so --limit 5 always means 5 new accounts
     if limit and limit > 0:
         pending = pending[:limit]
-        print(f"{C['yellow']}⚡ Limit set — running first {len(pending)} pending account(s).{C['reset']}")
+        logger.info(f"{C['yellow']}⚡ Limit set — running first {len(pending)} pending account(s).{C['reset']}")
 
-    print(f"\n{C['bold']}Thomas Scientific // {category}{C['reset']}")
-    print(f"{C['dim']}{len(pending)} accounts | Signals: {', '.join(signals)} | Last {DAYS_BACK} days{C['reset']}")
+    logger.info(f"\n{C['bold']}Thomas Scientific // {category}{C['reset']}")
+    logger.info(f"{C['dim']}{len(pending)} accounts | Signals: {', '.join(signals)} | Last {DAYS_BACK} days{C['reset']}")
 
-    for account in pending:
-        run_account(client, account, category, signals,
-                    output_file=output_file, all_results=all_results)
+    # Run all accounts sequentially, signals in parallel per account
+    async def _run_all():
+        sem = asyncio.Semaphore(13)  # max 13 concurrent signals — covers BioPharma's 13 signals, safe under 60 RPM
+        for account in pending:
+            await run_account_async(client, account, category, signals,
+                                    output_file=output_file, all_results=all_results,
+                                    sem=sem)
+
+    asyncio.run(_run_all())
+    # Allow aiohttp connector to close cleanly
+    time.sleep(0.5)
 
     print_summary(all_results)
 
     if output_file:
         save_incremental(all_results, output_file)
-        print(f"\033[90mFinal results saved to {output_file}\033[0m\n")
+        logger.info(f"\033[90mFinal results saved to {output_file}\033[0m")
+        if log_file:
+            logger.info(f"\033[90mLog saved to {log_file}\033[0m\n")
